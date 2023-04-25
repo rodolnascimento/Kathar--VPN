@@ -1,0 +1,12 @@
+
+
+
+iface eth0 inet static
+        address 2.3.5.2
+        netmask 255.255.255.252
+        up ip route add 200.200.200.0/25 via 2.3.5.1
+
+iface eth1 inet static
+        address 2.3.4.254
+        netmask 255.255.255.0
+
